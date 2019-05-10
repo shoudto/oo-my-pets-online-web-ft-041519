@@ -13,7 +13,6 @@ class Owner
   # binding.pry
    @name = name 
    @species = species
-   @pets = pets
    @pets = {:cats=>[], 
             :dogs=>[], 
             :fishes=>[]}
@@ -80,7 +79,7 @@ class Owner
   
   def list_pets
     # binding.pry 
-    "I have 2 fish, 3 dog(s), and 1 cat(s)."
+     "I have #{@pets[:fishes].count} fish, #{@pets[:dogs].count} dog(s), and #{@pets[:cats].count} cat(s)."
   end 
  
  
