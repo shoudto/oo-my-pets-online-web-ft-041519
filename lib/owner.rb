@@ -13,7 +13,6 @@ class Owner
   # binding.pry
    @name = name 
    @species = species
-   @pets = pets
    @pets = {:cats=>[], 
             :dogs=>[], 
             :fishes=>[]}
